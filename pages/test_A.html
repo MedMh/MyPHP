@@ -1,0 +1,297 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["login"])){
+        header("Location: index.html");
+    }
+?>
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>My PHP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="stylesheet" media="all" href="css/style.css">
+
+	<link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css2/style2.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<header id="header">
+		<div class="container">
+			<a href="home.html" id="logo" title="HarrisonHighSchool">HarrisonHighSchool</a>
+			<div class="menu-trigger"></div>
+			<nav id="menu">
+				<ul>
+					<li class="current"><a href="formation.html">Formation</a></li>
+					<li><a href="forum.html">Forum</a></li>
+					<li><a href="php.php">PHP</a></li>
+ 				</ul>
+				<ul>
+					<li><a href="boite.html">Boite</a></li>
+					<li><a href="#fancy" class="get-contact">Contact</a></li>
+                                        <li><a href="../controller/logout.php">Logout</a></li>
+   				</ul>
+			</nav>
+			<!-- / navigation -->
+		</div>
+		<!-- / container -->
+	
+	</header>
+	<!-- / header -->
+	
+	<div class="divider"></div>
+	
+	<div class="content">
+		<div class="container">
+
+	
+
+  <form action="../controller/testA.php" method="post">
+      
+        <h1>Test avancé</h1>
+        
+        
+        	  <fieldset>
+        	  <legend><span class="number">1</span>Question</legend>
+         	 <label for="bio">L'énoncé de la question:</label>
+         	 <textarea id="bio" name="user_bio" disabled>Comment vérifier la syntaxe d'une adresse e-mail contenue dans la variable $email ?</textarea>     
+        	  <label>Sélectionner une seule réponse :</label>
+         	 <input type="radio" id="under_13" value="a" name="q1"><label for="under_13" class="light">A) strpos($email,"*@*.*")
+</label><br>
+        	  <input type="radio" id="under_13" value="b" name="q1"><label for="under_13" class="light">B) ereg($email,"[:alpha:]*@[:alpha:]*\.[:alpha:]*")</label><br>
+        	  <input type="radio" id="over_13" value="c" name="q1"><label for="over_13" class="light">C) preg_match("/^(\w|-)+@((\w|-)+\.)+[a-z]{2,6}$/i",$email)</label>
+        	  </fieldset>
+          
+          
+
+		
+       
+		<fieldset>
+          <legend><span class="number">2</span>Question</legend>
+          <label for="bio">L'énoncé de la question:</label>
+          <textarea id="bio" name="user_bio" disabled>Par défaut, dans quel ordre de priorité sont affectées les variables envoyées par HTTP ?</textarea>     
+          <label>Sélectionner une seule réponse :</label>
+          <input type="radio" id="under_13" value="a" name="q2"><label for="under_13" class="light">A) get, cookie, post</label><br>
+          <input type="radio" id="under_13" value="b" name="q2"><label for="under_13" class="light">B) post, get, cookie</label><br>
+          <input type="radio" id="over_13" value="c" name="q2"><label for="over_13" class="light">C) get, post, cookie</label>
+          </fieldset>
+
+
+
+<fieldset>
+          <legend><span class="number">3</span>Question</legend>
+          <label for="bio">L'énoncé de la question:</label>
+          <textarea id="bio" name="user_bio" disabled>Comment définit-on le constructeur d'une classe (compatible PHP3/4/5) ?</textarea>     
+          <label>Sélectionner une seule réponse :</label>
+          <input type="radio" id="under_13" value="a" name="q3"><label for="under_13" class="light">A) grâce à public static void()</label><br>
+          <input type="radio" id="under_13" value="b" name="q3"><label for="under_13" class="light">B) en utilisant __construct()</label><br>
+          <input type="radio" id="over_13" value="c" name="q3"><label for="over_13" class="light">C) en nommant la fonction comme la classe</label>
+          </fieldset>
+
+
+
+
+
+<fieldset>
+          <legend><span class="number">4</span>Question</legend>
+          <label for="bio">L'énoncé de la question:</label>
+          <textarea id="bio" name="user_bio" disabled>Comment mémorise-t-on de façon pratique une variable d'un script à l'autre sur un serveur web ?</textarea>     
+          <label>Sélectionner une seule réponse :</label>
+          <input type="radio" id="under_13" value="a" name="q4"><label for="under_13" class="light">A) Grâce à serialize()</label><br>
+          <input type="radio" id="under_13" value="b" name="q4"><label for="under_13" class="light">B) En utilisant $_SESSION</label><br>
+          <input type="radio" id="over_13" value="c" name="q4"><label for="over_13" class="light">C) Au moyen de register_globals()</label>
+          </fieldset>
+
+
+
+          <fieldset>
+          <legend><span class="number">5</span>Question</legend>
+          <label for="bio">L'énoncé de la question:</label>
+          <textarea id="bio" name="user_bio" disabled>Quelle fonction de bufferisation (temporisation) envoie au navigateur les données contenues par le tampon, et stoppe la tamporisation de sortie ?</textarea>     
+          <label>Sélectionner une seule réponse :</label>
+          <input type="radio" id="under_13" value="a" name="q5"><label for="under_13" class="light">A)  ob_flush()</label><br>
+          <input type="radio" id="under_13" value="b" name="q5"><label for="under_13" class="light">B)  ob_end_flush()</label><br>
+          <input type="radio" id="over_13" value="c" name="q5"><label for="over_13" class="light">C)  ob_get_flush()</label>
+          </fieldset>
+
+
+
+	  <fieldset>
+          <legend><span class="number">6</span>Question</legend>
+          <label for="bio"></label>
+          <textarea id="bio" name="user_bio" disabled>De quelle façon autorise-t-on l'accès à un fichier
+- en lecture/écriture/exécution pour le propriétaire
+- en lecture/écriture pour le groupe
+- en lecture pour les autres
+?</textarea>     
+          <label>Sélectionner une seule réponse :</label>
+          <input type="radio" id="under_13" value="a" name="q6"><label for="under_13" class="light">A) chmod('fichier',0764);</label><br>
+          <input type="radio" id="under_13" value="b" name="q6"><label for="under_13" class="light">B) chmod('fichier','u+wrx g+rw o+r');</label><br>
+          <input type="radio" id="over_13" value="c" name="q6"><label for="over_13" class="light">C) chown('fichier','0777');</label>
+          </fieldset>
+
+	
+
+	 <fieldset>
+          <legend><span class="number">7</span>Question</legend>
+          <label for="bio"></label>
+          <textarea id="bio" name="user_bio" disabled>Quelle fonction permet d'obtenir les informations suivantes à propos d'un fichier : date de dernier accès, date de modification, date de création ?</textarea>     
+          <label>Sélectionner une seule réponse :</label>
+          <input type="radio" id="under_13" value="a" name="q7"><label for="under_13" class="light">A) stat()</label><br>
+          <input type="radio" id="under_13" value="b" name="q7"><label for="under_13" class="light">B) filemtime()</label><br>
+          <input type="radio" id="over_13" value="c" name="q7"><label for="over_13" class="light">C) filegroup()</label>
+          </fieldset>
+
+
+
+
+	 <fieldset>
+          <legend><span class="number">8</span>Question</legend>
+          <label for="bio"></label>
+          <textarea id="bio" name="user_bio" disabled>Quel mot clé permet de conserver la valeur d'une variable locale dans une même fonction appelée plusieurs fois de suite ?</textarea>     
+          <label>Sélectionner une seule réponse :</label>
+          <input type="radio" id="under_13" value="a" name="q8"><label for="under_13" class="light">A) global</label><br>
+          <input type="radio" id="under_13" value="b" name="q8"><label for="under_13" class="light">B) const</label><br>
+          <input type="radio" id="over_13" value="c" name="q8"><label for="over_13" class="light">C) static</label>
+          </fieldset>
+
+
+
+
+
+
+	 <fieldset>
+          <legend><span class="number">9</span>Question</legend>
+          <label for="bio"></label>
+          <textarea id="bio" name="user_bio" disabled>Quelle méthode permet d'attraper par défaut les exceptions lancées par un script, à l'aide d'une fonction propre function gestion_exception($e) { ... } ?</textarea>     
+          <label>Sélectionner une seule réponse :</label>
+          <input type="radio" id="under_13" value="a" name="q9"><label for="under_13" class="light">A) $handler->setdefault('gestion_exception');</label><br>
+          <input type="radio" id="under_13" value="b" name="q9"><label for="under_13" class="light">B) set_exception_handler('gestion_exception');</label><br>
+          <input type="radio" id="over_13" value="c" name="q9"><label for="over_13" class="light">C) exception_handler($e) = gestion_exception();</label>
+          </fieldset>
+
+
+
+
+
+
+
+	 <fieldset>
+          <legend><span class="number">10</span>Question</legend>
+          <label for="bio"></label>
+          <textarea id="bio" name="user_bio" disabled>$a = M_PI;
+$b = &$a;
+Sachant qu'au cours de l'éxécution du script, $a = 10, que vaudra pow($b,2) * sqrt(3)/2 + $a; ?</textarea>     
+          <label>Sélectionner une seule réponse :</label>
+          <input type="radio" id="under_13" value="a" name="q10"><label for="under_13" class="light">A) pi² sqrt(3)/2 + 10</label><br>
+          <input type="radio" id="under_13" value="b" name="q10"><label for="under_13" class="light">B) pi² sqrt(3)/2 + pi</label><br>
+          <input type="radio" id="over_13" value="c" name="q10"><label for="over_13" class="light">C) 50 sqrt(3) + 10</label>
+          </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+        <button type="submit">Valider</button>
+      </form>
+      
+
+
+
+
+
+
+
+
+
+		</div>
+		<!-- / container -->
+	</div>
+	
+	<footer id="footer">
+		<div class="container">
+			<section>
+				<article class="col-1">
+					<h3>Contact</h3>
+					<ul>
+						<li class="address"><a href="#">151 W Adams St<br>Detroit, MI 48226</a></li>
+						<li class="mail"><a href="#">contact@harrisonuniversity.com</a></li>
+						<li class="phone last"><a href="#">(971) 536 845 924</a></li>
+					</ul>
+				</article>
+				<article class="col-2">
+					<h3>Forum topics</h3>
+					<ul>
+						<li><a href="#">Omnis iste natus error sit</a></li>
+						<li><a href="#">Nam libero tempore cum soluta</a></li>
+						<li><a href="#">Totam rem aperiam eaque </a></li>
+						<li><a href="#">Ipsa quae ab illo inventore veritatis </a></li>
+						<li class="last"><a href="#">Architecto beatae vitae dicta sunt </a></li>
+					</ul>
+				</article>
+				<article class="col-3">
+					<h3>Social media</h3>
+					<p>Temporibus autem quibusdam et aut debitis aut rerum necessitatibus saepe.</p>
+					<ul>
+						<li class="facebook"><a href="#">Facebook</a></li>
+						<li class="google-plus"><a href="#">Google+</a></li>
+						<li class="twitter"><a href="#">Twitter</a></li>
+						<li class="pinterest"><a href="#">Pinterest</a></li>
+					</ul>
+				</article>
+				<article class="col-4">
+					<h3>Newsletter</h3>
+					<p>Assumenda est omnis dolor repellendus temporibus autem quibusdam.</p>
+					<form action="#">
+						<input placeholder="Email address..." type="text">
+						<button type="submit">Subscribe</button>
+					</form>
+					<ul>
+						<li><a href="#"></a></li>
+					</ul>
+				</article>
+			</section>
+			<p class="copy">Copyright 2014 Harrison High School. Designed by <a href="http://www.vandelaydesign.com/" title="Designed by Vandelay Design" target="_blank">Vandelay Design</a>. All rights reserved.</p>
+		</div>
+		<!-- / container -->
+	</footer>
+	<!-- / footer -->
+
+	<div id="fancy">
+		<h2>Request information</h2>
+		<form action="#">
+			<div class="left">
+				<fieldset class="mail"><input placeholder="Email address..." type="text"></fieldset>
+				<fieldset class="name"><input placeholder="Name..." type="text"></fieldset>
+				<fieldset class="subject"><select><option>Choose subject...</option><option>Choose subject...</option><option>Choose subject...</option></select></fieldset>
+			</div>
+			<div class="right">
+				<fieldset class="question"><textarea placeholder="Question..."></textarea></fieldset>
+			</div>
+			<div class="btn-holder">
+				<button class="btn blue" type="submit">Send request</button>
+			</div>
+		</form>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script>window.jQuery || document.write("<script src='js/jquery-1.11.1.min.js'>\x3C/script>")</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>My PHP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" media="all" href="css/style.css">
+	<link rel="stylesheet" href="css1/style.css">
+        <link rel="stylesheet" href="css1/set1.css">
+	<!--Google Fonts-->
+ 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<div style="position:absolute;z-index:3;display:block;width:100%;">		
+	<a href="index.html" style="display:block;margin: auto;width:134px;height:148px;"><img src="images/logo1.png" style="display:block;margin: auto;"></a>
+	</div>
+	<div id="main-wrapper">
+	
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 left-side">
+        <header>
+          <span>Besoin d'un compte?</span>
+          <h3>Inscrivez-vous!</h3>
+        </header>
+      </div>
+      <div class="col-md-6 right-side">
+          <form method="post" action="../controller/signUpUser.php">
+        <span class="input input--hoshi">
+          <input class="input__field input__field--hoshi" name="uname" type="text" id="name" placeholder="Nom"/>
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="name">
+            <span class="input__label-content input__label-content--hoshi"></span>
+          </label>
+        </span>
+        <span class="input input--hoshi">
+          <input class="input__field input__field--hoshi" name="log" type="text" id="email" placeholder="E-mail" />
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="email">
+            <span class="input__label-content input__label-content--hoshi"></span>
+          </label>
+        </span>
+        <span class="input input--hoshi">
+          <input class="input__field input__field--hoshi" name="pwd" type="password" id="password" placeholder="Mot de passe"/>
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="password">
+            <span class="input__label-content input__label-content--hoshi"></span>
+          </label>
+        </span>
+        <span class="input input--hoshi">
+          <input class="input__field input__field--hoshi" name="pwd" type="password" id="password1" placeholder="Confirmer mot de passe"/>
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="password1">
+            <span class="input__label-content input__label-content--hoshi"></span>
+          </label>
+        </span>
+        <div class="cta">
+          <button type="submit" class="btn btn-primary pull-left" style="padding-left: 9px;">
+            S'inscrire
+          </button>
+          <span><a href="index.html">J'ai deja un compte</a></span>
+        </div>
+          </form>
+        
+      </div>
+    </div>
+  </div>
+
+</div> <!-- end #main-wrapper -->
+
+	
+	<footer id="footer">
+		<div class="container">
+			<section>
+				<article class="col-1">
+					<h3>Contact</h3>
+					<ul>
+						<li class="address"><a href="#">151 W Adams St<br>Detroit, MI 48226</a></li>
+						<li class="mail"><a href="#">contact@harrisonuniversity.com</a></li>
+						<li class="phone last"><a href="#">(971) 536 845 924</a></li>
+					</ul>
+				</article>
+				<article class="col-2">
+					<h3>Forum topics</h3>
+					<ul>
+						<li><a href="#">Omnis iste natus error sit</a></li>
+						<li><a href="#">Nam libero tempore cum soluta</a></li>
+						<li><a href="#">Totam rem aperiam eaque </a></li>
+						<li><a href="#">Ipsa quae ab illo inventore veritatis </a></li>
+						<li class="last"><a href="#">Architecto beatae vitae dicta sunt </a></li>
+					</ul>
+				</article>
+				<article class="col-3">
+					<h3>Social media</h3>
+					<p>Temporibus autem quibusdam et aut debitis aut rerum necessitatibus saepe.</p>
+					<ul>
+						<li class="facebook"><a href="#">Facebook</a></li>
+						<li class="google-plus"><a href="#">Google+</a></li>
+						<li class="twitter"><a href="#">Twitter</a></li>
+						<li class="pinterest"><a href="#">Pinterest</a></li>
+					</ul>
+				</article>
+				<article class="col-4">
+					<h3>Newsletter</h3>
+					<p>Assumenda est omnis dolor repellendus temporibus autem quibusdam.</p>
+					<form action="#">
+						<input placeholder="Email address..." type="text">
+						<button type="submit">Subscribe</button>
+					</form>
+					<ul>
+						<li><a href="#"></a></li>
+					</ul>
+				</article>
+			</section>
+			<p class="copy">Copyright 2014 Harrison High School. Designed by <a href="http://www.vandelaydesign.com/" title="Designed by Vandelay Design" target="_blank">Vandelay Design</a>. All rights reserved.</p>
+		</div>
+		<!-- / container -->
+	</footer>
+	<!-- / footer -->
+
+	
+</body>
+</html>
